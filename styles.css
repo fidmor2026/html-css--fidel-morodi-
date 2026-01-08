@@ -85,3 +85,49 @@ nav a:hover {
     font-size: 3.5rem;
   }
 }
+
+.films-hero {
+  padding: 60px 20px;
+}
+
+.film-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  padding: 20px;
+}
+
+.film-card {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.film-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.film-card h2 {
+  margin-bottom: 10px;
+  color: var(--color-primary);
+}
+
+.film-card p {
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+@media (min-width: 600px) {
+  .film-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .film-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
