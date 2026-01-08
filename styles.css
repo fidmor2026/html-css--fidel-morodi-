@@ -46,44 +46,48 @@ nav a:hover {
   color: var(--color-primary);
 }
 
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-  color: #ffffff;
+.categories ul {
+  list-style: none;
+  padding: 0;
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.cta-button {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: var(--color-primary);
-  color: #000;
+.categories a {
+  color: var(--color-primary);
   text-decoration: none;
+  font-size: 1.3rem;
   font-weight: bold;
-  border-radius: 6px;
 }
 
-.cta-button:hover {
+.categories a:hover {
   opacity: 0.8;
 }
 
-@media (min-width: 768px) {
-  .hero h1 {
-    font-size: 3rem;
-  }
-
-  .hero p {
-    font-size: 1.4rem;
-  }
+footer {
+  margin-top: 60px;
+  padding: 20px;
+  text-align: center;
+  color: var(--color-primary);
 }
 
-@media (min-width: 1024px) {
-  .hero {
-    padding: 120px 20px;
-  }
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 10px;
+}
 
-  .hero h1 {
-    font-size: 3.5rem;
-  }
+.footer-links a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  opacity: 0.8;
 }
 
 .films-hero {
@@ -129,5 +133,50 @@ nav a:hover {
 @media (min-width: 1024px) {
   .film-grid {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.product-hero {
+  padding: 60px 20px;
+}
+
+.product-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+}
+
+.product-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.product-info h2 {
+  margin-bottom: 10px;
+  color: var(--color-primary);
+}
+
+.product-info p {
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.product-price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: var(--color-primary);
+}
+
+@media (min-width: 768px) {
+  .product-layout {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .product-image,
+  .product-info {
+    flex: 1;
   }
 }
