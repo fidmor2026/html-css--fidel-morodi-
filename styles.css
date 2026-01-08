@@ -1,19 +1,87 @@
-/* Use import to split up your CSS into manageable chunks */
 @import url("./_reset.css");
-/* Files that are only needed to be imported are called partials */
-/* These are marked with an underscore: */
 @import url("./_variables.css");
-/* Feel free to add as many of these imports as you need */
 
 body {
   color: var(--color-primary);
   background-color: var(--color-secondary);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .centered {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  justify-content: center;
   text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: var(--color-primary);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--color-primary);
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.cta-button:hover {
+  opacity: 0.8;
+}
+
+@media (min-width: 768px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    padding: 120px 20px;
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+  }
 }
