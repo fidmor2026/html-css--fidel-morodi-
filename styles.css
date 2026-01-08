@@ -180,3 +180,39 @@ footer {
     flex: 1;
   }
 }
+
+
+
+.films-title {
+  padding: 60px 20px;
+}
+
+.films-title h1 {
+  font-size: 2.2rem;
+  color: var(--color-primary);
+}
+
+.films-list {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.film-row {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1a1a1a;
+  padding: 15px 20px;
+  border-radius: 8px;
+}
+
+.film-row h2 {
+  color: var(--color-primary);
+  font-size: 1.2rem;
+}
+
+.film-row p {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
