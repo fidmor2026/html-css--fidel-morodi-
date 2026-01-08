@@ -280,3 +280,40 @@ footer {
   font-size: 1.3rem;
   margin-bottom: 20px;
 }
+
+
+.payment-title {
+  padding: 60px 20px;
+}
+
+.payment-title h1 {
+  font-size: 2.2rem;
+  color: var(--color-primary);
+}
+
+.payment-box {
+  padding: 20px;
+  background-color: #1a1a1a;
+  margin: 0 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.payment-box label {
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+.payment-box input {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.pay-button {
+  margin-top: 20px;
+  text-align: center;
+}
