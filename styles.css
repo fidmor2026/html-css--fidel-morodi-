@@ -251,3 +251,32 @@ footer {
   color: var(--color-primary);
   margin-bottom: 20px;
 }
+
+
+.cart-title {
+  padding: 60px 20px;
+}
+
+.cart-title h1 {
+  font-size: 2.2rem;
+  color: var(--color-primary);
+}
+
+.cart-box {
+  padding: 20px;
+  background-color: #1a1a1a;
+  margin: 0 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.cart-box h2 {
+  color: var(--color-primary);
+  margin-bottom: 10px;
+}
+
+.cart-price {
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
