@@ -1,4 +1,4 @@
-# Square Eyes – HTML and CSS assignment
+#### Square Eyes – HTML and CSS assignment ####
 
 This project is part of the Frontend Development course and focuses on building a complete, responsive, and accessible website based on a provided Figma design. The website consists of multiple pages that together form a full user flow: browsing films, viewing details, adding items to the cart, entering payment information, and receiving a confirmation message.
 
@@ -6,41 +6,41 @@ All HTML and CSS were written manually and follow the Figma layout as closely as
 
 ---
 
-##  File Structure-
+#  File Structure-
 
 
 
 
-## Pages in the Project
+# Pages in the Project
 
-###  01. index.html
+#  01. index.html
 The homepage with the main message “Connecting Film-Lovers” and a list of film categories.  
 Includes navigation and footer.
 
-### 02. films.html
+# 02. films.html
 Displays all films according to the Figma design.  
 Each film is shown with its title and price in a simple list layout.
 
-### 03. product.html
+# 03. product.html
 Shows detailed information about a selected film (The Batman).  
 Includes title, description, price, and a button to add the film to the cart.
 
-### 04. cart.html
+# 04. cart.html
 Shows the content of the shopping cart.  
 Includes the selected film, its price, and a button to proceed to payment.
 
-### 05. payment.html
+# 05. payment.html
 A payment form with the following fields:  
 Name, Card Number, Expiry Date, and CVC.  
 Includes a button to complete the purchase.
 
-### 06. confirmation.html
+# 06. confirmation.html
 A confirmation page that displays a success message after the purchase is completed.  
 Includes a button to return to the homepage.
 
 ---
 
-## Design & Layout
+# Design & Layout
 
 - The layout follows the Figma design exactly.
 - Colors and variables are stored in `_variables.css`.
@@ -51,7 +51,7 @@ Includes a button to return to the homepage.
 
 ---
 
-## Accessibility (WCAG)
+# Accessibility (WCAG)
 
 The project follows basic WCAG principles:
 
@@ -65,19 +65,19 @@ The project follows basic WCAG principles:
 
 ---
 
-## Validation
+# Validation
 
-### HTML Validation
+# HTML Validation
 All HTML files were checked using the W3C HTML Validator.  
 Any issues found (such as missing alt attributes or structural errors) were corrected.
 
-### CSS Validation
+# CSS Validation
 `styles.css` was checked using the W3C CSS Validator.  
 Warnings were reviewed and fixed when necessary.
 
 ---
 
-## Responsiveness
+# Responsiveness
 
 - Mobile-first approach.
 - Layout scales up using flexbox.
@@ -86,7 +86,7 @@ Warnings were reviewed and fixed when necessary.
 
 ---
 
-## Technologies Used
+# Technologies Used
 
 - HTML5  
 - CSS3  
@@ -97,7 +97,7 @@ Warnings were reviewed and fixed when necessary.
 
 ---
 
-## Summary
+# Summary
 
 This project is a complete implementation of the Square Eyes website based on the provided Figma design.  
 All pages were built manually, validated, and structured according to the assignment requirements.  
@@ -105,3 +105,59 @@ The focus was on clean code, accessibility, and staying faithful to the design.
 
 
 
+#### (WCAG) Checklista - Accessibility Checklist #### 
+
+This project follows basic WCAG 2.1 principles. Below is a summary of the accessibility considerations implemented:
+
+# 01. Perceivable
+- All text has sufficient color contrast against the background.
+- Headings follow a clear hierarchy (h1 → h2).
+- Content is structured using semantic HTML elements (header, main, section, footer).
+- Images include alt attributes where needed.
+
+# 02. Operable
+- Navigation is consistent across all pages.
+- Links and buttons are clearly visible and easy to identify.
+- The website can be navigated using keyboard only.
+- No auto‑playing media or time‑based interactions.
+
+# 03. Understandable
+- Labels are provided for all form fields on the payment page.
+- Buttons use clear and descriptive text (e.g., “Add to cart”, “Proceed to payment”).
+- Layout and structure are consistent across all pages.
+
+# 04. Robust
+- HTML validates without critical errors.
+- CSS validates without major issues.
+- The structure works across modern browsers and screen sizes.
+
+
+#### Validation Summary ####
+
+# 01. HTML Validation
+All HTML files were tested using the W3C HTML Validator.  
+Any issues found were corrected, such as:
+- Missing alt attributes
+- Minor structural warnings
+- Unclosed tags
+
+After corrections, all pages passed validation.
+
+# 02. CSS Validation**
+`styles.css` was tested using the W3C CSS Validator.  
+The file passed validation after fixing minor warnings such as:
+- Vendor‑specific suggestions
+- Unused rules (cleaned up during development)
+
+
+
+#### Final Project Review ####
+
+- All pages match the Figma design structure.
+- Navigation works correctly between all pages.
+- The layout is responsive and readable on mobile and desktop.
+- All text content matches the assignment and Figma.
+- Buttons and links lead to the correct pages.
+- Footer is consistent across the entire website.
+- Payment form fields are functional and labeled.
+- Confirmation page displays a clear success message.
