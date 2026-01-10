@@ -346,3 +346,34 @@ footer {
   color: #ffffff;
   margin-bottom: 20px;
 }
+
+
+/* CATEGORY GRID */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.category-box {
+  padding: 40px 0;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 10px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* UNIQUE COLORS */
+.action { background-color: #e63946; }
+.horror { background-color: #1d3557; }
+.romance { background-color: #ff6b6b; }
+.independent { background-color: #6a4c93; }
+.documentary { background-color: #457b9d; }
+.comedy { background-color: #f4a261; }
+.scifi { background-color: #2a9d8f; }
+.drama { background-color: #8d99ae; }
