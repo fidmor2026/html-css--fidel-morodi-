@@ -442,3 +442,36 @@ footer {
 .comedy { background-color: #f4a261; }
 .scifi { background-color: #2a9d8f; }
 .drama { background-color: #8d99ae; }
+
+
+.film-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.film-card {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.film-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.film-card h2 {
+  margin-bottom: 10px;
+  color: var(--color-primary);
+}
+
+.film-card p {
+  margin-bottom: 15px;
+  color: #ffffff;
+}
