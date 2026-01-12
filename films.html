@@ -3,14 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Browse all films available on Square Eyes." />
+    <meta name="description" content="Browse films available on Square Eyes." />
     <title>Square Eyes | Films</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
 
-    <header>
-      <nav>
+    <header class="main-header">
+      <a href="index.html" class="logo">
+        <img src="noroff-logo.png" alt="Square Eyes Logo" />
+      </a>
+
+      <nav class="main-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="films.html">Films</a></li>
@@ -21,50 +26,66 @@
 
     <main>
 
-      <section class="films-title centered">
-        <h1>All Films</h1>
+      <section class="films-title">
+        <h1>Films</h1>
       </section>
 
-      <section class="films-list">
+      <section class="film-grid">
 
-        <article class="film-row">
-          <h2>Toy Story 4</h2>
-          <p>kr 50</p>
-        </article>
-
-        <article class="film-row">
+        <!-- FILM 1 -->
+        <article class="film-card">
+          <img src="images/film1.jpg" alt="Film 1" />
           <h2>The Batman</h2>
           <p>kr 55</p>
         </article>
 
-        <article class="film-row">
-          <h2>The Addams Family</h2>
-          <p>kr 35</p>
-        </article>
-
-        <article class="film-row">
-          <h2>Sweetheart</h2>
-          <p>kr 45</p>
-        </article>
-
-        <article class="film-row">
+        <!-- FILM 2 -->
+        <article class="film-card">
+          <img src="images/film2.jpg" alt="Film 2" />
           <h2>Scream</h2>
-          <p>kr 40</p>
+          <p>kr 49</p>
         </article>
 
-        <article class="film-row">
-          <h2>Godzilla</h2>
+        <!-- FILM 3 -->
+        <article class="film-card">
+          <img src="images/film3.jpg" alt="Film 3" />
+          <h2>Sweetheart</h2>
+          <p>kr 39</p>
+        </article>
+
+        <!-- FILM 4 -->
+        <article class="film-card">
+          <img src="images/film4.jpg" alt="Film 4" />
+          <h2>Moonlight</h2>
+          <p>kr 59</p>
+        </article>
+
+        <!-- FILM 5 -->
+        <article class="film-card">
+          <img src="images/film5.jpg" alt="Film 5" />
+          <h2>Arrival</h2>
           <p>kr 45</p>
         </article>
 
-        <article class="film-row">
-          <h2>Hobbs & Shaw</h2>
+        <!-- FILM 6 -->
+        <article class="film-card">
+          <img src="images/film6.jpg" alt="Film 6" />
+          <h2>Hereditary</h2>
           <p>kr 55</p>
         </article>
 
-        <article class="film-row">
-          <h2>Once Upon a Time in Hollywood</h2>
-          <p>kr 50</p>
+        <!-- FILM 7 -->
+        <article class="film-card">
+          <img src="images/film7.jpg" alt="Film 7" />
+          <h2>Before Sunrise</h2>
+          <p>kr 39</p>
+        </article>
+
+        <!-- FILM 8 -->
+        <article class="film-card">
+          <img src="images/film8.jpg" alt="Film 8" />
+          <h2>Whiplash</h2>
+          <p>kr 49</p>
         </article>
 
       </section>
