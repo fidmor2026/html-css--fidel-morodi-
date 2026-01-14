@@ -1,13 +1,31 @@
 @import url("./_reset.css");
 @import url("./_variables.css");
 
-/* GLOBAL */
+/* ------------------------------
+   GLOBAL BASE
+------------------------------ */
+
 body {
   color: var(--color-primary);
   background-color: var(--color-secondary);
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
+}
+
+/* Global width for all pages */
+main,
+section,
+.film-grid,
+.category-grid,
+.product-layout {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Global spacing */
+section {
+  padding: 40px 20px;
 }
 
 .centered {
@@ -18,7 +36,10 @@ body {
   text-align: center;
 }
 
-/* HEADER */
+/* ------------------------------
+   HEADER
+------------------------------ */
+
 .main-header {
   display: flex;
   justify-content: space-between;
@@ -52,7 +73,10 @@ body {
   opacity: 0.8;
 }
 
-/* HERO */
+/* ------------------------------
+   HERO (INDEX)
+------------------------------ */
+
 .hero {
   padding: 80px 20px;
   text-align: center;
@@ -64,14 +88,15 @@ body {
   color: var(--color-primary);
 }
 
-/* CATEGORY GRID (INDEX) */
+/* ------------------------------
+   CATEGORY GRID (INDEX)
+------------------------------ */
+
 .category-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   padding: 20px;
-  max-width: 900px;
-  margin: 0 auto;
 }
 
 .category-box {
@@ -94,7 +119,10 @@ body {
 .scifi { background-color: #2a9d8f; }
 .drama { background-color: #8d99ae; }
 
-/* FILMS PAGE */
+/* ------------------------------
+   FILMS PAGE
+------------------------------ */
+
 .films-title {
   padding: 60px 20px;
   text-align: center;
@@ -105,14 +133,11 @@ body {
   color: var(--color-primary);
 }
 
-/* FILM GRID */
 .film-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .film-card {
@@ -138,36 +163,12 @@ body {
   color: #ffffff;
 }
 
-/* FOOTER */
-footer {
-  margin-top: 60px;
-  padding: 20px;
-  text-align: center;
-  color: var(--color-primary);
-}
+/* ------------------------------
+   PRODUCT PAGE
+------------------------------ */
 
-.footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-bottom: 10px;
-}
-
-.footer-links a {
-  color: var(--color-primary);
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.footer-links a:hover {
-  opacity: 0.8;
-}
-
-
-
-/* PRODUCT PAGE */
 .product-title {
-  padding: 60px 20px;
+  padding: 40px 20px;
   text-align: center;
 }
 
@@ -181,8 +182,6 @@ footer {
   flex-direction: column;
   gap: 30px;
   padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .product-image img {
@@ -191,13 +190,17 @@ footer {
   margin-bottom: 20px;
 }
 
+.product-info {
+  color: #000000;
+}
+
 .product-info h2 {
   color: var(--color-primary);
   margin-bottom: 15px;
 }
 
 .product-description {
-  color: #ffffff;
+  color: #000000;
   margin-bottom: 20px;
   line-height: 1.5;
 }
@@ -225,8 +228,51 @@ footer {
   opacity: 0.9;
 }
 
-/* DESKTOP LAYOUT */
-@media (min-width: 768px) {
+/* ------------------------------
+   FOOTER
+------------------------------ */
+
+footer {
+  margin-top: 60px;
+  padding: 20px;
+  text-align: center;
+  color: var(--color-primary);
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  opacity: 0.8;
+}
+
+/* ------------------------------
+   RESPONSIVE BREAKPOINTS
+------------------------------ */
+
+/* TABLET */
+@media (min-width: 600px) {
+  .product-title h1 {
+    font-size: 2.5rem;
+  }
+
+  .product-description {
+    font-size: 1.1rem;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 900px) {
   .product-layout {
     flex-direction: row;
     align-items: flex-start;
@@ -236,14 +282,16 @@ footer {
   .product-info {
     flex: 1;
   }
-}
 
+  .product-description {
+    font-size: 1.15rem;
+  }
 
-.product-info {
-  color: #000000;
-}
+  section {
+    padding: 60px 20px;
+  }
 
-
-.product-description {
-  color: #000000 !important;
+  footer {
+    margin-top: 40px;
+  }
 }
