@@ -295,3 +295,41 @@ footer {
     margin-top: 40px;
   }
 }
+
+
+/* PAYMENT FORM */
+.payment-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.payment-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.payment-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-field label {
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: var(--color-primary);
+}
+
+.payment-field input {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background-color: #f7f7f7; /* super ljus grå */
+  font-size: 1rem;
+}
+
+.payment-button-wrapper {
+  text-align: center;
+  margin-top: 20px;
+}
