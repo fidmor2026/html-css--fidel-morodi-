@@ -4,15 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Square Eyes – Payment</title>
+  <meta name="description" content="Enter your payment details to complete your purchase on Square Eyes." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
 
-  <!-- HEADER -->
+  <!-- Header-logo-navigation -->
   <header class="main-header">
     <a href="index.html" class="logo">
-      <img src="images/noroff-logo.png" alt="Square Eyes Logo" />
+      <img src="images/noroff-logo.png" alt="Square Eyes logo" />
     </a>
 
     <nav class="main-nav">
@@ -24,45 +25,47 @@
     </nav>
   </header>
 
-  <!-- MAIN CONTENT -->
+  <!-- Main -->
   <main>
 
-    <!-- PAGE TITLE -->
+    <!-- Payment page -->
     <section class="product-title">
       <h1>Payment Details</h1>
     </section>
 
-    <!-- PAYMENT FORM -->
+    <!-- Payment form -->
     <section>
+      <h2>Enter Your Payment Information</h2>
+
       <div class="payment-form">
 
-        <!-- ROW 1 -->
+        <!-- Row 1 -->
         <div class="payment-row">
           <div class="payment-field">
-            <label>Name</label>
-            <input type="text" placeholder="Your Name" />
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Your Name" aria-label="Name" />
           </div>
 
           <div class="payment-field">
-            <label>Card Number</label>
-            <input type="text" placeholder="1234 5678 9012 3456" />
+            <label for="card-number">Card Number</label>
+            <input id="card-number" type="text" placeholder="1234 5678 9012 3456" aria-label="Card Number" />
           </div>
         </div>
 
-        <!-- ROW 2 -->
+        <!-- Row 2 -->
         <div class="payment-row">
           <div class="payment-field">
-            <label>Expiry Date</label>
-            <input type="text" placeholder="MM/YY" />
+            <label for="expiry">Expiry Date</label>
+            <input id="expiry" type="text" placeholder="MM/YY" aria-label="Expiry Date" />
           </div>
 
           <div class="payment-field">
-            <label>CVC</label>
-            <input type="text" placeholder="123" />
+            <label for="cvc">CVC</label>
+            <input id="cvc" type="text" placeholder="123" aria-label="CVC" />
           </div>
         </div>
 
-        <!-- PAY BUTTON -->
+        <!-- Pay button -->
         <div class="payment-button-wrapper">
           <a href="confirmation.html" class="cta-button">PAY NOW</a>
         </div>
@@ -72,7 +75,7 @@
 
   </main>
 
-  <!-- FOOTER -->
+  <!-- Footer -->
   <footer>
     <div class="footer-links">
       <a href="#">About</a>
