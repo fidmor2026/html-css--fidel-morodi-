@@ -1,9 +1,6 @@
 @import url("./_reset.css");
 @import url("./_variables.css");
 
-/* ------------------------------
-   GLOBAL BASE
------------------------------- */
 
 body {
   color: var(--color-primary);
@@ -14,7 +11,6 @@ body {
   line-height: 1.6;
 }
 
-/* Global width for all pages */
 main,
 section,
 .film-grid,
@@ -24,22 +20,14 @@ section,
   margin: 0 auto;
 }
 
-/* Global spacing */
 section {
   padding: 40px 20px;
 }
 
 .centered {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
 }
 
-/* ------------------------------
-   HEADER
------------------------------- */
 
 .main-header {
   display: flex;
@@ -74,9 +62,6 @@ section {
   opacity: 0.8;
 }
 
-/* ------------------------------
-   HERO (INDEX)
------------------------------- */
 
 .hero {
   padding: 80px 20px;
@@ -94,9 +79,6 @@ section {
   font-size: 1.1rem;
 }
 
-/* ------------------------------
-   CATEGORY GRID (INDEX)
------------------------------- */
 
 .category-grid {
   display: grid;
@@ -125,9 +107,6 @@ section {
 .scifi { background-color: #2a9d8f; }
 .drama { background-color: #8d99ae; }
 
-/* ------------------------------
-   FILMS PAGE
------------------------------- */
 
 .films-title {
   padding: 60px 20px;
@@ -152,6 +131,7 @@ section {
   border-radius: 8px;
   padding: 20px;
   text-align: center;
+  text-decoration: none;
 }
 
 .film-card img {
@@ -170,14 +150,10 @@ section {
   color: #000000;
 }
 
-/* ------------------------------
-   PRODUCT PAGE
------------------------------- */
 
 .product-title {
   padding: 40px 20px;
   text-align: center;
-  margin-bottom: 10px;
 }
 
 .product-title h1 {
@@ -202,10 +178,10 @@ section {
   color: #000000;
 }
 
+.product-info h3,
 .product-info h2 {
   color: var(--color-primary);
   margin-bottom: 15px;
-  margin-top: 10px;
 }
 
 .product-description {
@@ -237,9 +213,6 @@ section {
   opacity: 0.9;
 }
 
-/* ------------------------------
-   PAYMENT PAGE
------------------------------- */
 
 .payment-form {
   max-width: 600px;
@@ -278,9 +251,6 @@ section {
   margin-top: 20px;
 }
 
-/* ------------------------------
-   CONFIRMATION PAGE
------------------------------- */
 
 .confirmation-wrapper {
   text-align: center;
@@ -301,7 +271,7 @@ section {
 }
 
 .check-text {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #000000;
 }
@@ -320,9 +290,6 @@ section {
   margin: 0 auto;
 }
 
-/* ------------------------------
-   FOOTER
------------------------------- */
 
 footer {
   margin-top: 60px;
@@ -348,9 +315,7 @@ footer {
   opacity: 0.8;
 }
 
-/* ------------------------------
-   RESPONSIVE BREAKPOINTS
------------------------------- */
+
 
 /* TABLET */
 @media (min-width: 600px) {
