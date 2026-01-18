@@ -5,6 +5,7 @@ The goal was to transform my design concept for **Square Eyes** into a fully fun
 
 Square Eyes is a platform where users can browse films, view details, add items to a cart, and complete a mock checkout flow.
 
+
 ---
 
 ## Live Website (GitHub Pages)
